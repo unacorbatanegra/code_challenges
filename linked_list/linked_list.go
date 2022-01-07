@@ -1,4 +1,4 @@
-package main
+package challenge
 
 type ListNode struct {
 	Value interface{}
@@ -11,7 +11,7 @@ Note: Try to solve this task in O(n) time using O(1) additional space, where n i
 Given a singly linked list of integers l and an integer k, remove all elements from list l that have a value equal to k.
 
 */
-func removeKFromList(l *ListNode, k int) *ListNode {
+func RemoveKFromList(l *ListNode, k int) *ListNode {
 	c := l
 	if c.Value == k && c.Next != nil {
 		c = c.Next
@@ -35,7 +35,7 @@ Given a singly linked list of integers, determine whether or not it's a palindro
 
 Note: in examples below and tests preview linked lists are presented as arrays just for simplicity of visualization: in real data you will be given a head node l of the linked list
 */
-func isListPalindrome(l *ListNode) bool {
+func IsListPalindrome(l *ListNode) bool {
 	var list []interface{}
 	c := l
 

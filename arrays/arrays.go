@@ -1,4 +1,4 @@
-package main
+package challenge
 
 import "strconv"
 
@@ -69,7 +69,7 @@ Implement an algorithm that will check whether the given grid of numbers
 represents a valid Sudoku puzzle according to the layout rules described above.
 Note that the puzzle represented by grid does not have to be solvable.
 */
-func sudoku(grid [][]string) bool {
+func Sudoku(grid [][]string) bool {
 
 	for row := 0; row < len(grid); row++ {
 		for col := 0; col < len(grid[row]); col++ {
@@ -154,7 +154,7 @@ the answer is true. If it does not become a valid arithmetic solution, the answe
 Note that number 0 doesn't contain leading zeroes (while for example 00 or 0123 do).
 */
 
-func isCryptSolution(crypt []string, solution [][]string) bool {
+func IsCryptSolution(crypt []string, solution [][]string) bool {
 	m := make(map[string]string)
 
 	for i, v := range solution {
